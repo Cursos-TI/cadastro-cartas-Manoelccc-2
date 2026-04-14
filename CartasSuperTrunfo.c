@@ -15,6 +15,9 @@ int main()
   float Área;
   float PIB;
   char Carta[5];
+  float Densidade ;
+  float Per_capita;
+
 
   // Área para entrada de dados
   printf("Carta: \n");
@@ -41,6 +44,12 @@ int main()
   printf("Número de Pontos Turísticos: \n");
   scanf("%i", &Numero);
 
+  Densidade = (float)(População / Área );
+
+  Per_capita = (float)(PIB / População );
+
+  
+
   // Área para exibição dos dados da cidade
 
   printf("Carta: %s\n", Carta);
@@ -56,6 +65,12 @@ int main()
   printf("PIB: %.2f\n", PIB);
 
   printf("Numero de Ponto Turístico: %i\n", Numero);
+
+  printf("Densidade Populacional: %d\n", Densidade);
+
+  printf("PIB per Capita: %d\n", Per_capita);
+
+  
   
 
   return 0;
